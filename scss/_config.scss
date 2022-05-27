@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$white: white;
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+$font-stack: 'Poppins', sans-serif;
+
+@mixin flexProperty($prop1, $prop2, $prop3, $prop4: "") {
+    display: $prop1;
+    align-items: $prop2;
+    justify-content: $prop3;
+    flex-direction: unquote($prop4);
+}
+
+@mixin textProperty($prop1, $prop2, $prop3, $prop4: "", $prop5: "") {
+    color: $prop1;
+    font-size: $prop2;
+    font-weight: $prop3;
+    text-align: unquote($prop4);
+    line-height: unquote($prop5);
+}
